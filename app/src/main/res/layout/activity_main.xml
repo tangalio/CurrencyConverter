@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="#9CE1EA"
+    tools:context=".MainActivity">
+    <com.google.android.material.textfield.TextInputLayout
+        android:background="@drawable/borderradius"
+        android:layout_margin="10dp"
+        android:id="@+id/textinput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:gravity="center"
+            android:textSize="20dp"
+            android:inputType="number"
+            android:background="@drawable/borderradius"
+            android:id="@+id/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_marginHorizontal="20dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:text="0"
+        android:textSize="20dp"
+        android:background="@drawable/borderradius"
+        android:id="@+id/txtview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <LinearLayout
+        android:backgroundTint="#00BCD4"
+        android:background="@drawable/borderradius"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Spinner
+            android:layout_marginHorizontal="10dp"
+            android:id="@+id/sourcemoney"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/borderradius"
+            android:spinnerMode="dropdown" />
+        <ImageView
+            android:background="@drawable/border"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/img_3"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"/>
+        <Spinner
+            android:layout_marginHorizontal="10dp"
+            android:background="@drawable/borderradius"
+            android:layout_marginTop="10dp"
+            android:id="@+id/destinationmoney"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <Button
+            android:backgroundTint="#2196F3"
+            android:layout_marginTop="10dp"
+            android:hint="Convert"
+            android:textStyle="bold"
+            android:id="@+id/button"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

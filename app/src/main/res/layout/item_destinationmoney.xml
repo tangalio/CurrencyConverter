@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:weightSum="3"
+    android:background="@drawable/borderradius"
+    android:padding="10dp">
+    <ImageView
+        android:layout_marginRight="10dp"
+        android:id="@+id/img_hinhanh"
+        android:layout_width="50dp"
+        android:layout_height="50dp"/>
+    <TextView
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginRight="10dp"
+        android:id="@+id/textView_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:text="Language Name" />
+
+    <TextView
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:gravity="right"
+        android:id="@+id/textView_item_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Percent" />
+</LinearLayout>
